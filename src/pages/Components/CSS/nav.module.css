@@ -1,0 +1,30 @@
+.navContainer{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    height: 50px;
+    background-color: grey;
+    margin-bottom: 10px;
+    border: 1px solid green;
+}
+.navLeft{
+    height: inherit;
+    border: 1px solid brown;
+    justify-content: center;
+}
+.navRight{
+    float: right;
+    border: 1px solid brown;
+}
+.navUl{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-content: center;
+    justify-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 10px; 
+}
+.navUl li{
+    text-align: center;
+}
+.navUl li a{ text-decoration: none;}
