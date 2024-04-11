@@ -12,13 +12,14 @@ export default function Sandip(){
 
     return (<>
     <Navbar />
-    <div className="parent">
+    <div className="parent after">
         <Leftpanel />
         <div className="bodyContent">
-        
+        <div style={{paddingTop: '50px'}}>
         <div>Count value {count}</div>
         <div><button onClick={increment}>Increment</button></div>
         <div><button onClick={decremet}>Decrement</button></div>
+        </div>
     </div>
     </div>
 

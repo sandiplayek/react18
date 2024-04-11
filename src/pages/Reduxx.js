@@ -1,5 +1,5 @@
 import Navbar from "./Components/Navbar"
-import { useSelector,useDispatch } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
 //import { store } from "redux";
 import { Helmet } from "react-helmet";
 import Leftpanel from "./Leftpanel";

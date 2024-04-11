@@ -12,8 +12,13 @@ code {
     monospace;
 }
 
+.after:after{ 
+  content:""; display:block; clear:both; visibility:hidden;
+}
+
 .parent{
   padding: 0px 10px 0px 10px;
+  border: 3px solid hotpink;
 }
 .leftpanel{
   width: 200px;
@@ -27,7 +32,7 @@ code {
   height: 600px;
   /* width: 600px; */
   width: calc(100% - 210px);
-  padding-top: 50px;
+  /* padding-top: 50px; */
   border-radius: 20px;
   border: 1px solid darkorchid;
   float: right;

@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import Sandip from './pages/Sandip';
 import Ref from './pages/Ref';
 import Classcompo from './pages/Classcompo';
+import Reducerhook from './pages/Reducerhook';
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
     <Route path='/sandip' element={<Sandip />}/>
     <Route path='/ref' element={<Ref></Ref>}/>
     <Route path='/class' element={<Classcompo />}/>
+    <Route path='/reducer' element={<Reducerhook />}/>
 
     </Routes>
     </BrowserRouter>

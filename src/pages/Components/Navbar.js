@@ -17,6 +17,7 @@ export default function Navbar({currentPage=''})
                 <li className={navCSS.navLi}><Link to={`/sandip`}>Custom Hook</Link></li>
                 <li className={navCSS.navLi}><Link to={`/ref`}>useRef</Link></li>
                 <li className={navCSS.navLi}><Link to={`/class`}>Class component</Link></li>
+                <li className={navCSS.navLi}><Link to={`/reducer`}>useReducer</Link></li>
 
             </ul>
         </div>

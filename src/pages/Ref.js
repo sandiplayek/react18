@@ -4,12 +4,13 @@ import Leftpanel from "./Leftpanel";
 
 export default function Ref()
 {
-    const [count,setCount]= useState(0);
-    const prevCountRef =useRef();
+    const [count,setCount] = useState(0);
+    const prevCountRef = useRef();
     const inputFocus = useRef();
 
     useEffect(()=>{
         prevCountRef.current = count;
+        console.log('ueffect count --'+count);
     },[count]);
 
     const setFcus = () =>{

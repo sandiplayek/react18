@@ -18,14 +18,14 @@ export default function About()
         <Leftpanel />
         <div className="bodyContent">
         
-        <div>About</div>
+        <div>About page: using useFetch custom hook</div>
         {data &&
-          data.map((item) => {
-            return  <p key={item.id}>{item.title}</p>
+          data.map((item, index) => {
+            return  index<5 && <p key={item.id}>{item.title}</p>
             })}
 
           --------------------------------------------
-          {data && data.map((fruit) => (
+          {data && data.map((fruit,index2) => (index2<5 && 
                     <div key={fruit.id}>
                         {fruit.title}
                     </div>

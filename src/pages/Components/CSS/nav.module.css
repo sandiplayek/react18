@@ -1,30 +1,41 @@
 .navContainer{
-    display: grid;
-    grid-template-columns: 10% 90%;
+    /* display: grid; */
+    /* grid-template-columns: 10% 90%; */
     height: 50px;
     background-color: grey;
     margin-bottom: 10px;
     border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
 }
 .navLeft{
     height: inherit;
     border: 1px solid brown;
     justify-content: center;
+    float: left;
+    width: 200px;
+    background-color: blue;
+    line-height: 40px;
 }
 .navRight{
     float: right;
     border: 1px solid brown;
+    width: calc(100% - 205px);
 }
 .navUl{
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    justify-content: center;
+    /* display: grid;
+    grid-template-columns: repeat(9, 1fr); */
+    justify-content: start;
     justify-items: center;
     list-style: none;
     margin: 0;
     padding: 10px; 
+    text-align: left;
 }
 .navUl li{
     text-align: center;
+    display: inline-block;
+    margin: 0 20px;
+
 }
 .navUl li a{ text-decoration: none;}
