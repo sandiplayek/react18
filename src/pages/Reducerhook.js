@@ -3,7 +3,7 @@ import { useReducer } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from './Components/Navbar';
 import Leftpanel from './Leftpanel';
-const initialState ={ count : 0 }
+const initialState = { count : 0 }
 
 function countReducer(state,action){
     switch (action.type){
@@ -11,8 +11,10 @@ function countReducer(state,action){
             return {count: state.count+action.payload}
         case 'decrement' :
             return {count: state.count-action.payload}
+        case 'reset' :
+            return initialState;
         default:
-            return state
+            return state;
     }
 }
 
@@ -30,6 +32,7 @@ const Reducerhook = () => {
             <p>Count : {statee.count}</p>
             <button onClick={()=>dispatchh({type : 'increment',payload : 10})}>Increment</button>
             <button onClick={()=>dispatchh({type : 'decrement',payload : 10})}>Decrement</button>
+            <button onClick={() => dispatchh({ type: "reset" })}>Reset</button>
             </div>
             </div>
         </>
