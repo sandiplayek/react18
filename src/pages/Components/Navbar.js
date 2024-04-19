@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import navCSS from "./CSS/nav.module.css"
 export default function Navbar({currentPage=''})
 {
-    console.log('currentPage-- ',currentPage)
+   // console.log('currentPage-- ',currentPage)
     return (
     <div className={navCSS.navContainer}>
         <div className={navCSS.navLeft}>Logo soace</div>
@@ -18,6 +18,7 @@ export default function Navbar({currentPage=''})
                 <li className={navCSS.navLi}><Link to={`/ref`}>useRef</Link></li>
                 <li className={navCSS.navLi}><Link to={`/class`}>Class component</Link></li>
                 <li className={navCSS.navLi}><Link to={`/reducer`}>useReducer</Link></li>
+                <li className={navCSS.navLi}><Link to={`/hoc`}>HOC</Link></li>
 
             </ul>
         </div>
