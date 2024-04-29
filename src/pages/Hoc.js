@@ -7,10 +7,10 @@ import OnHoverCounter from './Components/OnHoverCounter';
 const Hoc = () => {
     return (
         <>
-    <Helmet>
+        <Helmet>
         <title>React-Higher Order component page</title>
         <meta name="description" content="React-redux page Helmet application" />
-      </Helmet>
+        </Helmet>
         <Navbar />
         <div className="parent">
         <Leftpanel />

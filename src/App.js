@@ -12,6 +12,7 @@ import Ref from './pages/Ref';
 import Classcompo from './pages/Classcompo';
 import Reducerhook from './pages/Reducerhook';
 import Hoc from './pages/Hoc';
+import Pure from './pages/Pure';
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,7 @@ function App() {
     <Route path='/class' element={<Classcompo />}/>
     <Route path='/reducer' element={<Reducerhook />}/>
     <Route path='/hoc' element={<Hoc />}/>
+    <Route path='/pure' element={<Pure />}/>
 
     </Routes>
     </BrowserRouter>

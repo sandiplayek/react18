@@ -19,6 +19,7 @@ export default function Navbar({currentPage=''})
                 <li className={navCSS.navLi}><Link to={`/class`}>Class component</Link></li>
                 <li className={navCSS.navLi}><Link to={`/reducer`}>useReducer</Link></li>
                 <li className={navCSS.navLi}><Link to={`/hoc`}>HOC</Link></li>
+                <li className={navCSS.navLi}><Link to={`/pure`}>Pure</Link></li>
 
             </ul>
         </div>
