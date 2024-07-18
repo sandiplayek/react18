@@ -2,7 +2,7 @@
     /* display: grid; */
     /* grid-template-columns: 10% 90%; */
     height: 50px;
-    background-color: grey;
+    background-color: black;
     margin-bottom: 10px;
     border: 1px solid green;
     display: flex;
@@ -25,17 +25,17 @@
 .navUl{
     /* display: grid;
     grid-template-columns: repeat(9, 1fr); */
-    justify-content: start;
+    display: flex;
+    justify-content: space-evenly;
     justify-items: center;
     list-style: none;
     margin: 0;
-    padding: 10px; 
+    padding: 5px; 
     text-align: left;
 }
 .navUl li{
     text-align: center;
     display: inline-block;
-    margin: 0 12px;
-
+    margin: 0 2px;
 }
-.navUl li a{ text-decoration: none;}
+.navUl li a{ text-decoration: none; color: white;}

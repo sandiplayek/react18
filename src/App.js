@@ -17,6 +17,7 @@ import Slug from './pages/Slug';
 import Nested from './pages/Nested';
 import Product1 from './pages/Components/Product1';
 import Product2 from './pages/Components/Product2';
+import Form from './pages/Form';
 function App() {
   return (
     <div className="App">
@@ -34,11 +35,12 @@ function App() {
     <Route path='reducer' element={<Reducerhook />}/>
     <Route path='hoc' element={<Hoc />}/>
     <Route path='pure' element={<Pure />}/>
-    <Route path='slug/*' element={<Slug />} />
+    <Route path='slug/:id/:val' element={<Slug />} />
     <Route path='nested' element={<Nested />} >
       <Route path='product1' element={<Product1 />}/>
       <Route path='product2' element={<Product2 />}/>
     </Route>
+    <Route path='form' element={<Form />} />
 
     </Routes>
     </BrowserRouter>
