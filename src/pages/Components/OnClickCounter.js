@@ -8,6 +8,7 @@ const OnClickCounter = (props) => {
 
     return (
         <div>
+            <p>Props sent: {props.nameprops}</p>
             <h2>On Click Count: {countVal}</h2>
             <button onClick={()=>onAction()}>On Click Counter</button>
             {/* <button onClick={()=>()=>setCounter(counter + 1)}>On Hover Counter</button> */}

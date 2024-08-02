@@ -3,6 +3,7 @@ import { useState,useEffect } from "react"
 import { useIncrementDecrement } from "./Hook/useIncrementDecrement";
 import { useSelector } from "react-redux";
 import Leftpanel from "./Leftpanel";
+import Cookies from "js-cookie";
 
 export default function Home()
 {
@@ -20,7 +21,7 @@ export default function Home()
 
     const count_stored = useSelector(state=>state.counter);
 
-
+    Cookies.set('name', 'Home.js')
 
     return (<>
     <Navbar />

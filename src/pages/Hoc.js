@@ -15,7 +15,7 @@ const Hoc = () => {
         <div className="parent">
         <Leftpanel />
         <div className="bodyContent">
-        <OnClickCounter />
+        <OnClickCounter nameprops="sandip" />
         <OnHoverCounter />
         </div>
         </div>

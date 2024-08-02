@@ -18,6 +18,7 @@ import Nested from './pages/Nested';
 import Product1 from './pages/Components/Product1';
 import Product2 from './pages/Components/Product2';
 import Form from './pages/Form';
+import Memoo from './pages/Memoo';
 function App() {
   return (
     <div className="App">
@@ -41,6 +42,7 @@ function App() {
       <Route path='product2' element={<Product2 />}/>
     </Route>
     <Route path='form' element={<Form />} />
+    <Route path='memo' element={<Memoo />} />
 
     </Routes>
     </BrowserRouter>

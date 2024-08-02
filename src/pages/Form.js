@@ -67,7 +67,7 @@ const Form = () => {
 
     return (<>
     <Helmet>
-        <title>Submit form with syntaxheighlighter</title>
+        <title>Submit form and show code with SyntaxHighlighter</title>
     </Helmet>
         <Navbar />
         <div className="parent after">

@@ -23,6 +23,8 @@ export default function Navbar({currentPage=''})
                 <li className={navCSS.navLi}><Link to={`/slug/1/5`}>Slug</Link></li>
                 <li className={navCSS.navLi}><Link to={`/nested`}>Nested</Link></li>
                 <li className={navCSS.navLi}><Link to={`/form`}>Form</Link></li>
+                <li className={navCSS.navLi}><Link to={`/memo`}>Memo</Link></li>
+
             </ul>
         </div>
     </div>);
